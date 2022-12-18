@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918304390905",
+    "project_id": "yusufdeneme-32e1d",
+    "storage_bucket": "yusufdeneme-32e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918304390905:android:74259716f7aef0720aac28",
+        "android_client_info": {
+          "package_name": "com.dmrys.yusufdeneme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918304390905-4p313ehip65qa6mha7pgdo02g8ls86dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzHb1FGYiaKgL25SgoY3EHzUD_Iq8GxxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918304390905-4p313ehip65qa6mha7pgdo02g8ls86dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

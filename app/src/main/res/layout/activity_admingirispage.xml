@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminpagebackground"
+    tools:context=".Admingirispage">
+
+    <Button
+        android:id="@+id/girisbutton2"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttoncolor"
+        android:fontFamily="@font/cantata_one"
+        android:text="Giriş Yap"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="294dp"
+        android:background="@drawable/mavibutton"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mavibutton"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

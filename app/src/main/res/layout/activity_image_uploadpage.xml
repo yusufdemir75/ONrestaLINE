@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imageuploadpage"
+    tools:context=".ImageUploadpage">
+
+    <LinearLayout
+        android:layout_width="129dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="135dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsec">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="160dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/cardview_shadow_end_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonsec"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mavibutton1"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Resim Seç"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonyukle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMenuAd" />
+
+    <EditText
+        android:id="@+id/etMenuAd"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="?android:selectableItemBackground"
+        android:ems="10"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center"
+        android:hint="Ürün Adı?"
+        android:inputType="textPersonName"
+        android:textColorHint="#63D2E1"
+        app:layout_constraintEnd_toStartOf="@+id/etMenuAd2"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eturunicindekiler"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/eturunicindekiler"
+        android:layout_width="391dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:ems="10"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center"
+        android:hint="Ürün İçindekiler?"
+        android:inputType="textPersonName"
+        android:textColorHint="#63D2E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etMenuAd2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:selectableItemBackground"
+        android:ems="10"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center"
+        android:hint="Fiyat?"
+        android:inputType="textPersonName"
+        android:textColorHint="#63D2E1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonyukle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etMenuAd"
+        app:layout_constraintTop_toBottomOf="@+id/eturunicindekiler"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonyukle"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mavibutton1"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Resmi Yükle"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonsec"
+        app:layout_constraintTop_toBottomOf="@+id/etMenuAd" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="154dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsec"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioGroup
+            android:id="@+id/radiogrup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/corbabutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:shadowColor="#FFF7F7"
+                android:text="Çorba Ekle"
+                android:textColor="#F6EBEB"
+                android:textColorHighlight="#ECE8E8"
+                android:textColorHint="#EFECEC"
+                android:textColorLink="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/anayemekbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:shadowColor="#FFF7F7"
+                android:text="Ana Yemek Ekle"
+                android:textColor="#F6EBEB"
+                android:textColorHighlight="#ECE8E8"
+                android:textColorHint="#EFECEC"
+                android:textColorLink="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/salatabutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:shadowColor="#FFF7F7"
+                android:text="Salata Ekle"
+                android:textColor="#F6EBEB"
+                android:textColorHighlight="#ECE8E8"
+                android:textColorHint="#EFECEC"
+                android:textColorLink="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/tatlibutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:shadowColor="#FFF7F7"
+
+                android:text="Tatlı Ekle"
+                android:textColor="#F6EBEB"
+                android:textColorHighlight="#ECE8E8"
+                android:textColorHint="#EFECEC"
+                android:textColorLink="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/sogukicecekbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:shadowColor="#FFF7F7"
+                android:text="Soğuk İçecek Ekle"
+                android:textColor="#F6EBEB"
+                android:textColorHighlight="#ECE8E8"
+                android:textColorHint="#EFECEC"
+                android:textColorLink="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/sıcakicecekbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:text="Sıcak İçecek Ekle"
+                android:textColor="#FFFAFA" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

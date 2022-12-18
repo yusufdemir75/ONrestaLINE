@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgotpasswordbackground"
+    tools:context=".Parolasifirlapage">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/mavibutton"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/geridonbutton"
+        android:layout_width="121dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="69dp"
+        android:background="@drawable/buttoncolor"
+        android:text="Giriş Sayfası"
+        android:textColor="#22E8E8"
+        app:layout_constraintEnd_toStartOf="@+id/sifresifirlabutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <Button
+        android:id="@+id/sifresifirlabutton"
+        android:layout_width="121dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/buttoncolor"
+        android:text="Parolamı Sıfırla"
+        android:textColor="#22E8E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/geridonbutton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Lütfen şifresini sıfırlamak istediğiniz  e-posta adresini giriniz"
+        android:textColor="#A54141"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
